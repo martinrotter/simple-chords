@@ -92,6 +92,10 @@
     .grouped {
       display: flex;
       flex-flow: row wrap;
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+      background-color: beige;
+      border-radius: 5px;
     }
 
     h1 {
@@ -102,13 +106,14 @@
 
   <script>
     const chords_configuration = {
+      style: "normal",
       titleFontSize: 50,
       titleBottomMargin: 20,
       sidePadding: 0.2,
       fretSize: 1.35,
       fingerSize: 0.7,
-      fingerColor: '#333',
-      fingerTextSize: 28,
+      fingerColor: "#333",
+      fingerTextSize: 28
     }
 
     function createChord(root_div_id, chord) {
